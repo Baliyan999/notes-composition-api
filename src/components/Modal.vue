@@ -4,8 +4,8 @@
             <div class="modal__content" @click.stop>
                 <h3 class="modal__title">{{curNote.id ? 'Изменить' : 'Добавить'}} заметку</h3>
                 <form action="" class="modal__form" @submit.prevent="send">
-                    <input type="text" placeholder="Title" required class="modal__input" v-model="user.title">
-                    <textarea class="modal__input modal__area" placeholder="Content" required v-model="user.text"></textarea>
+                    <input type="text" placeholder="Заголовок" required class="modal__input" v-model="user.title">
+                    <textarea class="modal__input modal__area" placeholder="Заметка" required v-model="user.text"></textarea>
                     <div class="modal__btns">
                         <a href="#" class="modal__cancel" @click.prevent="clean">Отмена</a>
                         <button class="modal__btn">{{curNote.id ? 'Изменить' : 'Добавить'}}</button>
